@@ -14,19 +14,17 @@ int main(void)
     str_copy(str1, str2);    
     printf("str2: %s\n", str2);
     
-
     return 0;
 }
 
 
-void str_copy(const char s[], char t[])
-{
+void str_copy(const char s[], char t[]) {
 	int i;
-
 
 	for( i = 0; s[i] != '\0'; ++i ){
 		t[i] = s[i];
 	}
+	
 	t[i] = '\0';
 
 
