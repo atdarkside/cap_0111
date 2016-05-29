@@ -6,7 +6,7 @@
 int main(void)
 {
 	char str[MAXSTRLEN];
-	int n, i,Big,Small;
+	int n, i;
 
 	printf("文字列? ");
     scanf("%s", str);
@@ -20,15 +20,14 @@ int main(void)
 
     	for( i = 0; str[i] != '\0'; ++i ){
 
-    		if(str[i] >= 65 && str[i] <= 90)Big = 1;
-    		if(str[i] >= 97 && str[i] <= 122)Small = 1;
+    		if(str[i] >= 65 && str[i] <= 90 && str[i] + n > 90)str[i] -= 26;
+    		if(str[i] >= 97 && str[i] <= 122 && str[i] + n > 122)str[i] -= 26;
 
 			str[i] = str[i] + n;
 
-			if(Big == 1 && str[i] > 90)str[i] -= 26;
-			if(Small == 1 && str[i] > 122)str[i] -= 26;
 
 		}
+		str[i] = '\0';
 
 	}
 
