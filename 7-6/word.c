@@ -4,7 +4,7 @@ int main() {
 	FILE *fp;
 	char moji;
 	char file[100];
-	int wc = 0;
+	int word = 0;
 	int prevcheck = 0;
 
 	printf("Filename: ");
@@ -29,4 +29,3 @@ int main() {
 	printf("単語数: %d\n",word);
 	return 0;
 }
-

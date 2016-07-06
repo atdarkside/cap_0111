@@ -7,6 +7,7 @@ int main() {
 	int word = 0;
 	int line = 0;
 	int wc = 0;
+	int prevcheck = 0;
 
 	printf("Filename: ");
 	scanf("%s",file);
