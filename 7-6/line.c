@@ -12,7 +12,7 @@ int main() {
 	if(fp) {
 		moji = getc(fp);
 		while(moji != EOF) {
-			if(moji == '\n') line++;
+			if(moji == '\n')line++;
 			moji = getc(fp);
 		}
 	}

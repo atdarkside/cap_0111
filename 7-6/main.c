@@ -14,7 +14,14 @@ int main() {
 	if(fp) {
 		moji = getc(fp);
 		while(moji != EOF) {
-			if(moji == '\n' || moji == ' ') word++;
+			if(moji == '\n' || moji == ' '){
+				if(prevcheck == 0){
+					word++;
+				}
+				prevcheck = 1;
+			} else {
+				prevcheck = 0;
+			}
 			if(moji == '\n') line++;
 			wc++;
 			moji = getc(fp);
