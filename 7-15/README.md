@@ -1,6 +1,6 @@
 # @cap_0111's Kadai .
 
-今回の課題、6-17のsort.cとほぼ同じです。<br>
+今回の課題、6-17の[sort.c](https://github.com/atdarkside/cap_0111/tree/master/6-17)とほぼ同じです。<br>
 大きく違うのは以下の部分
 
 ```c
